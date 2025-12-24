@@ -18,7 +18,7 @@ export default function Hero() {
 
      <div className="mt-8 flex gap-4">
   <a
-    href="https://www.facebook.com/BlezoladProgramming"
+    href="https://www.facebook.com/profile.php?id=61583227992339"
     target="_blank"
     rel="noopener noreferrer"
     className="px-6 py-3 bg-blue-600 hover:bg-blue-500 transition rounded-md font-medium"
