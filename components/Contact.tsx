@@ -22,7 +22,7 @@ export default function Contact() {
           </a>
 
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/BlezoladProgramming"
             target="_blank"
             className="px-8 py-4 border border-white/20 hover:border-white/40 transition rounded-md"
           >
@@ -68,7 +68,10 @@ export default function Contact() {
             type="submit"
             className="px-6 py-3 bg-blue-600 hover:bg-blue-500 transition rounded-md font-medium"
           >
-            Send Message
+            <a
+            href="https://wa.me/+2349067903462"
+            target="_blank"> Send Message 
+            </a>
           </button>
         </form>
 
