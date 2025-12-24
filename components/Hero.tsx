@@ -16,9 +16,23 @@ export default function Hero() {
             performance, security, and scale in mind.
           </p>
 
-          <button className="mt-8 px-6 py-3 bg-blue-600 hover:bg-blue-500 transition rounded-md font-medium">
-            Let’s build something serious
-          </button>
+     <div className="mt-8 flex gap-4">
+  <a
+    href="https://www.facebook.com/BlezoladProgramming"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="px-6 py-3 bg-blue-600 hover:bg-blue-500 transition rounded-md font-medium"
+  >
+    Contact me on Facebook
+  </a>
+
+  <a
+    href="#projects"
+    className="px-6 py-3 border border-gray-600 hover:border-white transition rounded-md font-medium"
+  >
+    View Projects
+  </a>
+</div>
         </div>
 
         {/* Right: Orb Placeholder */}
