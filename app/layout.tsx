@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: "BlezoladProgramming",
     description:
       "High-performance web systems, APIs & modern platforms built for scale.",
-    url: "https://www.facebook.com/BlezoladProgramming",
+    url: "https://www.facebook.com/profile.php?id=61583227992339",
     siteName: "BlezoladProgramming",
     type: "website",
   },
@@ -44,7 +44,7 @@ export default function RootLayout({
         <Navbar />
         {children}
 <a
-  href="https://www.facebook.com/BlezoladProgramming"
+  href="https://www.facebook.com/profile.php?id=61583227992339"
   target="_blank"
   className="fixed bottom-6 right-6 z-40 bg-blue-600 p-3 rounded-full shadow-lg hover:scale-110 transition"
 >
