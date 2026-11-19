@@ -1,0 +1,2 @@
+import Link from "next/link";
+export default function NotFound(){return <section className="not-found spacious"><p className="eyebrow">404 / PAGE NOT FOUND</p><h1>Wrong turn.<br/><em>Good recovery.</em></h1><p>That page isn&apos;t part of this build. The index is always a safe place to start.</p><Link href="/" className="pill-link">Return to overview <span aria-hidden="true">↗</span></Link></section>}

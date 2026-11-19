@@ -1,0 +1,14 @@
+import type {Metadata} from "next";
+import Link from "next/link";
+import {profile} from "@/content/profile";
+import ContactForm from "@/components/ContactForm";
+import {pageMetadata} from "@/lib/seo";
+export const metadata:Metadata=pageMetadata("Start a conversation","Discuss a new website, existing product or full stack development challenge.","/contact");
+export default async function Contact({searchParams}:{searchParams:Promise<{service?:string}>}){
+  const {service} = await searchParams;
+  const available=Boolean(process.env.CONTACT_FORM_ENABLED === "true" && process.env.RESEND_API_KEY && process.env.CONTACT_TO_EMAIL && process.env.CONTACT_FROM_EMAIL);
+  return <><header className="inner-hero contact-hero"><p className="eyebrow">04 / WORK WITH A DEVELOPER</p><h1>Have an app idea?<br/><em>Let&apos;s build it.</em></h1><p>Need a website, a full-stack application, a frontend feature or help with backend code? Tell me what you want to create or improve.</p></header>
+  <section className="contact-section section-pad"><div className="contact-panel" data-reveal><p className="eyebrow">YOUR NEXT STEP</p><h2>Let&apos;s build<br/><em>something that works.</em></h2><p>Share your project idea or technical challenge. You don&apos;t need to know the frameworks or APIs in advance.</p><div className="contact-ways"><a href={`mailto:${profile.email}`}><small>EMAIL</small><span>{profile.email}</span><strong>↗</strong></a><a href={profile.whatsapp} target="_blank" rel="noopener noreferrer"><small>WHATSAPP</small><span>Start a chat</span><strong>↗</strong></a><a href={profile.github} target="_blank" rel="noopener noreferrer"><small>GITHUB</small><span>BlezoladProgramming</span><strong>↗</strong></a><a href={profile.x} target="_blank" rel="noopener noreferrer"><small>X / TWITTER</small><span>@Blezolad_2</span><strong>↗</strong></a></div></div>
+  <div className="contact-form-panel" data-reveal><div className="contact-form-header"><span>PROJECT BRIEF / 01</span><span>{available?"ENQUIRY FORM":"DIRECT CONTACT"}</span></div>{available?<><h3>Start here.</h3><p>Keep it simple: tell me what you&apos;re trying to build or improve.</p><ContactForm preset={service||""}/></>:<><h3>Say hello.</h3><p>The integrated form isn&apos;t connected to a verified email provider yet. Email and WhatsApp are available so your message doesn&apos;t disappear into a broken form.</p><a href={`mailto:${profile.email}?subject=${encodeURIComponent("BLEZOLAD project enquiry")}`} className="brief-submit standalone">Open an email draft <span aria-hidden="true">↗</span></a><p className="brief-privacy">Want the form activated? Follow the setup guide in the source package to configure a verified sender.</p></>}</div></section>
+  <section className="contact-note section-pad"><p>01 — SHARE THE IDEA</p><p>02 — DISCUSS SCOPE</p><p>03 — PLAN WHAT&apos;S NEXT</p><Link href="/privacy">HOW CONTACT DETAILS ARE USED ↗</Link></section></>;
+}
