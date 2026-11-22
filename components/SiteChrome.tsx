@@ -9,7 +9,8 @@ const nav = [
   {href: "/work", label: "Projects", number: "01"},
   {href: "/services", label: "Services", number: "02"},
   {href: "/about", label: "About", number: "03"},
-  {href: "/contact", label: "Contact", number: "04"},
+  {href: "/resume", label: "Résumé", number: "04"},
+  {href: "/contact", label: "Contact", number: "05"},
 ];
 export default function SiteChrome() {
   const pathname = usePathname();

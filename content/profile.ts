@@ -9,6 +9,7 @@ export const profile = {
   whatsapp: "https://wa.me/2349067903462",
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://portfolio-nine-pi-48.vercel.app",
   portrait: "/images/people/hamzat-muhammed-adewale.webp",
+  resumeUrl: "/documents/Hamzat_Muhammed_Adewale_CV.pdf",
   headline: "I develop websites and full-stack software for the web.",
   summary: "I develop responsive websites, web applications, backend APIs and database-powered features.",
 } as const;
