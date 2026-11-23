@@ -18,7 +18,7 @@ export default function Home(){return <>
       <p className="hero-overline">HEY, I&apos;M HAMZAT — THE DEVELOPER BEHIND BLEZOLAD.</p>
       <h1 id="hero-title">I develop<br/><span className="h1-outline">software</span><br/><em>for the web.</em></h1>
       <p className="hero-description">I&apos;m a full stack web developer building websites, web applications and the APIs behind them. I take an idea from interface to working functionality—with clean, thoughtful code.</p>
-      <div className="hero-actions"><Link href="/work" className="btn-electric">See my projects <span aria-hidden="true">↗</span></Link><Link href="/contact" className="hero-text-link">Have something to build? <span aria-hidden="true">→</span></Link></div>
+      <div className="hero-actions"><Link href="/work" className="btn-electric">See my projects <span aria-hidden="true">↗</span></Link><Link href="/contact" className="hero-text-link">Have something to build? <span aria-hidden="true">→</span></Link><a className="hero-cv-link" href={profile.resumeUrl} download>Download CV <span aria-hidden="true">↓</span></a></div>
       <div className="hero-tech-line" aria-label="Technologies used in my projects"><span>MY STACK</span><span>REACT</span><span>NEXT.JS</span><span>NODE.JS</span><span>PHP</span></div>
       <div className="hero-bottom"><span className="hero-availability"><span className="pulse-dot"/>AVAILABLE TO DISCUSS DEVELOPMENT PROJECTS</span><span className="hero-years">{profile.experience} <small>DEVELOPING FOR THE WEB</small></span></div>
     </div>
