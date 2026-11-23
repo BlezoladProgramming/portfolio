@@ -3215,3 +3215,15 @@ small,.eyebrow {
 @media(max-width:900px){.resume-preview{grid-template-columns:1fr}.resume-preview-card{max-width:600px}.resume-title-layout{grid-template-columns:1fr}.resume-document-card{max-width:350px;min-height:375px;transform:rotate(0deg)}.resume-section{grid-template-columns:1fr;gap:24px}}
 @media(max-width:550px){.resume-skill-row{grid-template-columns:1fr;gap:6px}.resume-section p{font-size:14px}.resume-preview-card{box-shadow:none}.resume-hero-actions .btn-electric,.resume-preview-actions .btn-electric{min-width:0}.resume-document-card{min-height:340px}.hero-cv-link{align-self:flex-start}}
 @media(prefers-reduced-motion:reduce){.resume-document-card,.resume-document-card:hover,.resume-project,.resume-project:hover{transform:none;transition:none}.hero-cv-link{transition:none}}
+
+/* BLEZOLAD — optional GA4 consent (only shows to undecided visitors). */
+.df-ga-consent{position:fixed;z-index:9998;right:clamp(12px,3vw,34px);bottom:clamp(12px,3vw,34px);width:min(440px,calc(100vw - 24px));padding:24px;border:1px solid #4a7188;background:#0e1b2b;box-shadow:0 18px 70px #030912e0;color:#f0f7ff;border-radius:14px}
+.df-ga-consent-top{display:flex;justify-content:space-between;gap:15px;align-items:center}.df-ga-kicker{font-size:10px;font-weight:800;letter-spacing:.13em;color:#55c7ff}
+.df-ga-consent h2{font-size:clamp(20px,2.3vw,26px);font-weight:800;letter-spacing:-.035em;line-height:1.2;margin:12px 0}.df-ga-consent p{font-size:13px;line-height:1.65;color:#bcd0dd;margin:0 0 20px}.df-ga-consent a{color:#55c7ff;text-decoration:underline;text-underline-offset:3px}
+.df-ga-actions{display:flex;flex-wrap:wrap;gap:10px}.df-ga-actions button{font-size:12px;min-height:44px;border-radius:7px;font-weight:750;padding:10px 14px;cursor:pointer;transition:background .18s,transform .18s}
+.df-ga-actions button:focus-visible,.df-ga-dismiss:focus-visible,.df-ga-footer-control:focus-visible{outline:3px solid #55c7ff;outline-offset:3px}
+.df-ga-accept{background:#55c7ff;color:#091521}.df-ga-accept:hover{background:#8fdbff}.df-ga-reject{border:1px solid #66869c;color:#e3f1fa;background:transparent}.df-ga-reject:hover{background:#1e364a}
+.df-ga-dismiss{min-width:36px;min-height:36px;font-size:24px;line-height:1;color:#c9deeb;cursor:pointer}
+.df-ga-footer-control{width:fit-content;cursor:pointer;color:inherit;text-align:left;text-decoration:underline;text-underline-offset:3px;font:inherit}.df-ga-footer-control:hover{color:#55c7ff}
+@media(max-width:480px){.df-ga-consent{padding:18px;bottom:12px;right:12px}.df-ga-actions{display:grid;grid-template-columns:1fr}.df-ga-actions button{width:100%}}
+@media(prefers-reduced-motion:reduce){.df-ga-actions button{transition:none}}

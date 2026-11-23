@@ -2,6 +2,7 @@ import type {Metadata} from "next";
 import SiteChrome from "@/components/SiteChrome";
 import Footer from "@/components/Footer";
 import MotionController from "@/components/MotionController";
+import AnalyticsConsent from "@/components/AnalyticsConsent";
 import {baseUrl} from "@/lib/seo";
 import "./globals.css";
 export const metadata: Metadata = {
@@ -12,5 +13,5 @@ export const metadata: Metadata = {
   twitter: {card:"summary_large_image",images:["/og-cover.png"]},
 };
 export default function RootLayout({children}:{children:React.ReactNode}){
-  return <html lang="en"><body id="top"><a className="skip-link" href="#main-content">Skip to content</a><SiteChrome/><MotionController/><div className="page-frame"><main id="main-content" tabIndex={-1}>{children}</main><Footer/></div></body></html>;
+  return <html lang="en"><body id="top"><a className="skip-link" href="#main-content">Skip to content</a><SiteChrome/><MotionController/><AnalyticsConsent/><div className="page-frame"><main id="main-content" tabIndex={-1}>{children}</main><Footer/></div></body></html>;
 }
