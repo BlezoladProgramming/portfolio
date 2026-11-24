@@ -3227,3 +3227,11 @@ small,.eyebrow {
 .df-ga-footer-control{width:fit-content;cursor:pointer;color:inherit;text-align:left;text-decoration:underline;text-underline-offset:3px;font:inherit}.df-ga-footer-control:hover{color:#55c7ff}
 @media(max-width:480px){.df-ga-consent{padding:18px;bottom:12px;right:12px}.df-ga-actions{display:grid;grid-template-columns:1fr}.df-ga-actions button{width:100%}}
 @media(prefers-reduced-motion:reduce){.df-ga-actions button{transition:none}}
+
+/* CV EDUCATION REFRESH — 23 Nov 2026 */
+.resume-education{display:grid;gap:23px}
+.resume-education-item{padding-bottom:16px;border-bottom:1px solid #315063}
+.resume-education-item:last-child{padding-bottom:0;border-bottom:0}
+.resume-education-item>span{color:var(--blue);font-size:10px;letter-spacing:.1em;font-weight:850;text-transform:uppercase}
+.resume-education-item h3{font-size:clamp(20px,2vw,27px);margin:11px 0;letter-spacing:-.04em}
+.resume-education-item p{margin:0}

@@ -3,6 +3,7 @@ export const profile = {
   name: "Hamzat Muhammed Adewale",
   role: "Full Stack Web Developer",
   experience: "2+ years",
+  location: "Oyo, Oyo State, Nigeria",
   email: "blezolad.1@gmail.com",
   github: "https://github.com/BlezoladProgramming",
   x: "https://x.com/Blezolad_2",

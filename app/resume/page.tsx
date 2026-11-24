@@ -27,7 +27,7 @@ export default function ResumePage(){return <>
     <div className="resume-title-layout">
       <div>
         <h1 id="resume-title">Behind the<br/><em>code.</em></h1>
-        <p className="resume-intro">I&apos;m {profile.name}, a {profile.role.toLowerCase()} with {profile.experience} of hands-on development experience. Here&apos;s a closer look at my skills, projects and background.</p>
+        <p className="resume-intro">I&apos;m {profile.name}, a {profile.role.toLowerCase()} with {profile.experience} of hands-on development experience. Based in {profile.location}. Here&apos;s a closer look at my skills, projects and background.</p>
         <div className="resume-hero-actions">
           <a href={profile.resumeUrl} download className="btn-electric">Download my CV <span aria-hidden="true">↓</span></a>
           <a href={profile.resumeUrl} target="_blank" rel="noopener noreferrer" className="underlined-link">Open the PDF <span aria-hidden="true">↗</span></a>
@@ -57,7 +57,7 @@ export default function ResumePage(){return <>
     </div>
     <div className="resume-section" data-reveal>
       <div className="resume-section-label"><span className="eyebrow">04 / EDUCATION</span></div>
-      <div className="resume-education"><span>November 2025</span><h3>National Diploma (ND), Computer Science</h3><p>Federal School of Surveying, Oyo</p></div>
+      <div className="resume-education"><div className="resume-education-item"><span>Currently studying</span><h3>Obafemi Awolowo University</h3><p>Ile-Ife, Osun State, Nigeria</p></div><div className="resume-education-item"><span>November 2025</span><h3>National Diploma (ND), Computer Science</h3><p>Federal School of Surveying, Oyo</p></div></div>
     </div>
     <div className="resume-section resume-last" data-reveal>
       <div className="resume-section-label"><span className="eyebrow">05 / GET IN TOUCH</span></div>
