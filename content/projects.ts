@@ -1,4 +1,4 @@
-export type ProjectStatus = "In development" | "Paused" | "Source available" | "Learning project";
+export type ProjectStatus = "Completed" | "In development" | "Paused" | "Source available" | "Learning project";
 export type ProjectScreenshot = {
   src: string;
   title: string;
@@ -160,18 +160,45 @@ export const projects: Project[] = [
   {
     slug: "blezolad-portfolio",
     name: "BLEZOLAD Portfolio",
-    label: "Redesign in progress",
-    kind: "Developer website / portfolio",
-    summary: "Redesigning a basic one-page developer site into a clearer business website and evidence-led portfolio.",
-    status: "In development",
-    role: "Design direction, frontend implementation and quality review",
-    stack: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
-    challenge: "Replace unsupported project claims, broken images and missing navigation with a trustworthy visitor experience.",
-    approach: ["Audit the existing source", "Define content and design tokens", "Build reusable routes and components", "Validate before release"],
-    delivered: ["Original source and design blueprint preserved", "Redesigned working-copy implementation underway"],
-    limitations: ["Deployment and browser validation still pending", "Do not claim measured performance gains"],
-    proof: [{label: "GitHub profile", href: "https://github.com/BlezoladProgramming"}],
-    image: null, featured: false,
+    label: "Completed and live",
+    kind: "Developer portfolio / completed website",
+    summary: "Completed and deployed multi-page developer portfolio presenting real software projects, development services, contact options and an up-to-date professional résumé.",
+    status: "Completed",
+    role: "Website redesign, UX/UI development, frontend implementation, project storytelling, testing and deployment",
+    stack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Vercel"],
+    challenge: "Replace a limited portfolio with a credible professional website that helps visitors understand my skills, inspect real work and contact me.",
+    approach: [
+      "Audit the original website, project claims and supporting imagery",
+      "Create a distinct visual identity and responsive multi-page navigation",
+      "Build interactive project and service explorers, individual case studies and a résumé page",
+      "Add real project screenshots, explicit privacy choices and repeatable quality checks",
+      "Deploy the site and maintain its content as projects evolve",
+    ],
+    delivered: [
+      "Public website deployed at portfolio-nine-pi-48.vercel.app",
+      "Responsive homepage, projects archive, detailed case studies, services, About, résumé and Contact pages",
+      "Interactive project explorer and service selector with direct links to relevant work",
+      "Downloadable professional CV, direct email/WhatsApp contact options and consent-controlled GA4 tag integration",
+      "Five distinct, owner-supplied real website captures showing the homepage, projects, services, résumé and Contact screens",
+    ],
+    limitations: [
+      "The optional contact form is not connected to a verified mail-sending provider; direct email and WhatsApp contact links remain available",
+      "Analytics tag installation does not by itself prove event delivery or report accuracy",
+      "Screenshots show the visible interface; no independently measured performance or accessibility scores are claimed",
+    ],
+    proof: [
+      { label: "Visit the live portfolio", href: "https://portfolio-nine-pi-48.vercel.app" },
+      { label: "View the portfolio source", href: "https://github.com/BlezoladProgramming/portfolio" },
+    ],
+    image: "/images/projects/blezolad-portfolio/overview.webp",
+    gallery: [
+      { src: "/images/projects/blezolad-portfolio/overview.webp", title: "Homepage", alt: "BLEZOLAD homepage showing the developer introduction, interactive preview and optional analytics consent panel.", caption: "Homepage with an interactive development preview and privacy choice controls." },
+      { src: "/images/projects/blezolad-portfolio/projects.webp", title: "Project explorer", alt: "BLEZOLAD project explorer showing selectable case studies and a Cinevex product screenshot.", caption: "Interactive portfolio project explorer, captured before the completed-status update." },
+      { src: "/images/projects/blezolad-portfolio/services.webp", title: "Development services", alt: "BLEZOLAD services page with a light-themed interactive service selector and service details.", caption: "Service categories and contextual descriptions of development work." },
+      { src: "/images/projects/blezolad-portfolio/resume.webp", title: "Professional résumé", alt: "BLEZOLAD résumé page with developer profile introduction and downloadable CV controls.", caption: "Résumé page with professional background and CV download options." },
+      { src: "/images/projects/blezolad-portfolio/contact.webp", title: "Contact", alt: "BLEZOLAD Contact page showing direct email, WhatsApp, GitHub and X links with project enquiry guidance.", caption: "Clear contact channels without presenting an unconfigured contact form as functional." },
+    ],
+    featured: false,
   },
   {
     slug: "3d-portfolio",
